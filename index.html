@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup (Made using BOOTSTRAP)</title>
+
+    <!-- Required meta tags ...  copied from BOOTSTRAP starter template page ... helps to optimize code for mobile devices-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>  <!-- instead of using BACKGROUND=picture.jpg ...  we are inserting picture from STYLE.css-->
+    <div class="container"> <!-- this is a BOOTSTRAP class defined it it's CSS file -->
+      <div class="row"> <!-- putting everything inside a Row .... ROW is a Bootstrap class -->
+        <header class="c1 col-12">  <!-- HEADER usually defines a page area that typically contains a logo, title, and navigation.... could have used DIV also  -->
+          <h1> <strong>The Biggest Startup Event of the Year </strong> </h1> <br><br><br><br><br>
+        </header>
+  
+        <section class="c1 col-12"> <!-- using 2 classes..c1 and col-12  -->
+          <hr> <!-- style added in CSS file -->
+
+          <a href="https://mailchi.mp/9d89e1ec5490/mitra_tutorial"> 
+            <button type="button" class="btn btn-primary My_Button"> Find Out More </button> <!-- THREE classes, Two from BOOTSTRAP Buttons (btn & btn-primary) linked to BOOTSTRAP CSS file....  and one our own (My_Button)-->
+
+          </a>
+        </section>   <!-- the entire container is One row and 12 column in size, and the contents occuoy 2 lines inside the same Row.... in a Bootstrap ROW class 1 row has a max of 12 columns only   -->
+      </div>
+    </div>
+            <!-- Bootstrap works using a 12 columns concept. 
+What you are creating here is a single "row" within which are two elements which both span 12 columns (col-12).  In bootstrap terms that means they will both take up the full width of the container and hence will appear below each other. 
+If they had both been set to col-6 they would appear beside each other each taking half the width.  If they had been specified as col-8 and col-4 they would be beside each other with the first taking up 2/3 and the second 1/3 of the width.
+ -->
+  </body>
+</html>

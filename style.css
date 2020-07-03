@@ -1,0 +1,68 @@
+body,
+html 
+{
+  width: 100%; /* ensures that body covers full page */
+  height: 100%; /* ensures that body covers full page */
+  font-family: 'Montserrat', sans-serif; /* This is a google font. Linked to google fonts in HEAD Tag */  
+
+  /* the html element (better than body as it’s always at least the height of the browser window).
+  We set a fixed and centered background on it, then adjust it’s size using background-size set to
+   the cover keyword.....copied from https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url(header.jpg) no-repeat center center fixed; /* could have inserted BACKGROUND in <BODY> tag also */
+  -webkit-background-size: cover; /* for Chrome Browser */ 
+  -moz-background-size: cover; /* for Firefox */
+  -o-background-size: cover; /* for Opera */
+  background-size: cover; 
+}
+
+
+h1
+{
+	font-size: rem;  /*  rem values are relative to the root html element, not to the parent element.*/
+	color : #eb4556;  /* copied the color code from a website using developer tool */
+	text-transform: uppercase;
+}
+
+hr
+{
+	border-color: red;
+	height:3px;
+	width: 40px
+
+}
+
+.My_Button   /* our own class  */
+{
+	padding: 1rem 2rem;
+
+}
+
+.btn   /*  Adding code to existing bootstrap class in bootstrap CSS*/
+{
+  font-weight: bold;
+  border-radius: 300px; 
+  text-transform: uppercase;
+  background-color: orange;
+}
+
+.btn-primary:hover  /* adding code to existing bootstrap class in Bootstrap CSS file   */
+{
+	background-color: #FF4301 ;
+	border-color:#9BDEAC ;
+	border-width: 4px;
+}
+
+
+.c1
+{
+	text-align: center;
+}
+
+.container
+{
+	height: 100%;  /* to ensurethat the container occupies the full page */ 
+	display: flex;
+	flex-wrap:wrap; /* putting items inside container inside a flexbox*/
+	justify-content: center;  /* Horizontqal alignment*/
+	align-items: center; /* Vertical Alignment */
+}
